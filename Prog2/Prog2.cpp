@@ -153,12 +153,14 @@ int main()
   {
     std::cout << e.what() << std::endl;
   }
+  
   a.push(2.0f);
   a.push(3.0f);
   std::cout << "top: " << a.top() << std::endl;
   a.pop();
   std::cout << "top: " << a.top() << std::endl;
   a.pop();
+  
   try {
     a.pop();
   }
@@ -166,6 +168,7 @@ int main()
   {
     std::cout << e.what() << std::endl;
   }
+  
   try {
     std::cout << "top: " << a.top() << std::endl;
   }
